@@ -1,0 +1,5 @@
+/node_modules/*
+/dist/*
+# override this file as it contains
+#  some of my code and should be commited.
+!/dist/index.html

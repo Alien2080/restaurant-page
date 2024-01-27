@@ -6,11 +6,12 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    static: './dist',
+    static: './dist/index-dev.html',
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Development',
+      filename: 'index-dev.html',
     }),
   ],
 });

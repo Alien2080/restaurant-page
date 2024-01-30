@@ -10,7 +10,7 @@ Uses Webpack to allow for JavaScript modules and other features to be able to re
 ```
   npm install  
 ```
-- run for developemt server  
+- run for developmet server  
 ```
   npm run start  
 ```  
@@ -23,4 +23,15 @@ Uses Webpack to allow for JavaScript modules and other features to be able to re
 Repo contains a webpack config that can be used as an example for other projects.  
 Has a prod and dev config file and uses webpack-merge to keep the common parts in a single place (webpack.common.js)  
 
+## GitHub pages
+[Live Demo](https://alien2080.github.io/restaurant-page/)
 
+### How to update the GitHub Page
+```
+sh gitpages-deploy.sh
+```
+There is a shell [script](gitpages-deploy.sh) that will automate the GitHub Page update.  
+Run the above command from the project directory to push the dist folder to the gh-pages branch. 
+
+### Reason for script
+GitHub Pages expeects the index.html file to be in the root folder. 

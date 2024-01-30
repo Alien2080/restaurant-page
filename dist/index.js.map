@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","mappings":"AAAAA,QAAQC,IAAI","sources":["webpack://restaurant-page/./src/index.js"],"sourcesContent":["console.log('test');\n\nif (process.env.NODE_ENV !== 'production') {\n  console.log('Looks like we are in development mode!');\n}\n"],"names":["console","log"],"sourceRoot":""}

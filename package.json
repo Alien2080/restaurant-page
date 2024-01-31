@@ -1,16 +1,16 @@
 {
   "name": "restaurant-page",
   "version": "1.0.0",
-  "description": "Odin course project. Dynamically rendered restaurant homepage.",
+  "description": "Odin course project. Dynamically rendered restaurant homepage",
   "private": "true",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "pages": "git add dist -f && git commit -m 'update github page with latest build' && git subtree push -f --prefix dist origin gh-pages"
+    "pages": "git add -f dist/* && git commit -m 'update github page with latest build' && git subtree push --prefix dist origin gh-pages"
   },
-  "author": "",
+  "author": "Tom Aylen",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.9.1",

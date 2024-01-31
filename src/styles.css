@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Monoton';
+  src: url('./assets/fonts/Monoton-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+:root {
+  --lightGrey: #979797;
+  --grey: #575757;
+  --red: #e60101;
+  --blue: #5734a8;
+
+  background-color: var(--lightGrey);
+}
+
+#title {
+  font-family: Monoton;
+  font-size: 100px;
+  color: var(--red);
+  background-color: aliceblue;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+header {
+  border-radius: 400px;
+  background-color: var(--blue);
+  width:fit-content;
+  padding: 2px;
+}
+
+button {
+  border-radius: 40px;
+  border: 0px;
+  font-family: Roboto;
+}
+
+button:hover {
+  background-color: var(--lightGrey);
+}

@@ -12,7 +12,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
-      favicon: "./src/assets/icons/favicon.ico",
+      favicon: path.resolve(__dirname, 'src/assets/icons/favicon.ico'),
       inject: 'body',
     }),
   ],
@@ -23,7 +23,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
         type: 'asset/resource',
       },
       {

@@ -26,3 +26,5 @@ First build the site with ```npm run build``` then deploy the newly created file
 ### Reason for script
 There is a shell [script](package-lock.json) called 'pages' saved in package.json that will automate the GitHub Page update.  
 GitHub Pages expects the index.html file to be in the root folder. In GitHub settings the Pages branch was changed to gh-pages.  
+
+found lots of issues with pushing to a branch like this. Git doesn't like it and I've added some more commands to avoid those errors.  

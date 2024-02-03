@@ -3,9 +3,10 @@
 
       div.addEventListener('click', function () {        
         this.style.animation = 'explode 0.5s ease-out forwards';
-        // // Optional: Remove the div after animation ends
+        // Optional: Remove the div after animation ends
         setTimeout(() => this.remove(), 500); // Adjust timeout to match animation duration
 
+        // Sausages!
         const sausagesContainer = document.getElementById('sausages');
         sausagesContainer.innerHTML = ''; // Clear previous sausages
         const h1Rect = this.getBoundingClientRect(); // Get position of the h1
@@ -16,7 +17,6 @@
           sausage.style.left = `${h1Rect.left + (h1Rect.width / 2) - 25}px`; // Center horizontally
           sausage.style.top = `${h1Rect.top + (h1Rect.height / 2) - 10 + window.scrollY}px`; // Center vertically, adjust for scroll
           sausagesContainer.appendChild(sausage);
-          // sausage.style.display = 'block';
 
           // Calculate random angle for both direction and rotation
           const angle = Math.random() * 360;
@@ -34,8 +34,6 @@
               rotate(${rotation}deg)`;
               sausage.style.opacity = '0'; // Fade out
           }, 0);
-          // sausage.style.transform = `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px) rotate(${rotation}deg)`;
-          // sausage.style.opacity = '1'; // Fade out
           
           // Ensure the sausage fades and moves smoothly
           setTimeout(() => sausage.remove(), 750); // Remove sausage from DOM after animation completes

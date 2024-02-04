@@ -9,7 +9,7 @@ Uses Webpack to allow for JavaScript ES6 modules and other features to be able t
 - run the following ```npm install```
 - run for development server (webpack) ```npm run start```  
 - run for production build  (output to dist folder) ```npm run build```
-- to deploy build website to GitHub Pages, run ```npm run pages```
+- to deploy build website to GitHub Pages, run ```npm run deploy-init``` on first commit and then ```npm run deploy``` from then on   
  
 ## Webpack 5
 Repo contains a webpack config that can be used as an example for other projects. Makes use of webpack-merge to keep common [config](webpack.common.js) together.    
@@ -21,7 +21,7 @@ Uses the webpack Dev server with hot reload on changes and html plugin to allow 
 [Live Demo](https://alien2080.github.io/restaurant-page/)
 
 ### How to update the GitHub Page
-First build the site with ```npm run build``` then deploy the newly created file in the [dist](dist) folder to the gh-pages branch with ```npm run pages``` 
+First build the site with ```npm run build``` then deploy the newly created file in the [dist](dist) folder to the gh-pages branch with ```npm run deploy``` and ```npm run deploy-init``` (see above)   
 
 ### Reason for script
 There is a shell [script](package-lock.json) called 'pages' saved in package.json that will automate the GitHub Page update.  

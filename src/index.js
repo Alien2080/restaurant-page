@@ -1,5 +1,7 @@
 import './styles.css';
 import Icon from './assets/icons/favicon.ico';
+import sausage from './/assets/images/simple-fried-sausage_trans.png';
+import cheeseburger from './assets/images/cheesburger.png';
 
 import home_page from './assets/pages/home_page';
 

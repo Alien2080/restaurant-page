@@ -23,10 +23,16 @@
     <div id="main-box">
       <div id="title-box">
         <h1 id="title">I did A thing</h1>
-        <div id="sausages"></div>       
+        <div id="sausages"></div>
         <h2 id="sub-title">and you should try it</h2>
         <p>Fake hamburger restraunt</p>
       </div>
+    <div id="home-box">
+      <div id="image-box">
+        <img id="cheeseburger-image" src="./assets/images/cheesburger.png" alt="cheeseburger">
+        <p>Borgur; 10 doller buck</p>
+      </div>
+    </div>
       <div>
       </div>
     </div>
@@ -36,7 +42,7 @@
     document.addEventListener('DOMContentLoaded', (event) => {
       const div = document.querySelector('#title');
 
-      div.addEventListener('click', function () {        
+      div.addEventListener('click', function () {
         this.style.animation = 'explode 0.5s ease-out forwards';
         setTimeout(() => this.remove(), 500); // Adjust timeout to match animation duration
 
@@ -69,15 +75,15 @@
           // Mutate transform attribute at end of callstack
           // so the browser doesn't optimising away the transition.
           setTimeout(() => {
-            sausage.style.transform = 
+            sausage.style.transform =
               `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px) 
               rotate(${rotation}deg)`;
-              sausage.style.opacity = '0'; // Fade out
+            sausage.style.opacity = '0'; // Fade out
           }, 0);
-          
+
           // Ensure the sausage fades and moves smoothly
           setTimeout(() => sausage.remove(), 750); // Remove sausage from DOM after animation completes
-        }        
+        }
       });
     });
   </script>

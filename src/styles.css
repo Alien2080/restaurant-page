@@ -11,8 +11,10 @@
 :root {
   --lightGrey: #979797;
   --grey: #575757;
+  --whiteish: #d3e1ff;
   --red: #e60101;
   --blue: #343ca8;
+  --sausageColour: #794d4d;
 
   background-color: var(--lightGrey);
 }
@@ -21,7 +23,7 @@
   font-family: Monoton;
   font-size: 100px;
   color: var(--red);
-  background-color: aliceblue;
+  background-color: var(--whiteish);
   padding: 20px;
   width: fit-content;
   border-radius: 50px;
@@ -32,10 +34,6 @@
 
 .sausage {
   display: block;
-  width: 50px;
-  height: 20px;
-  background-color: brown;
-  border-radius: 10px;
   position: absolute;
   transition: transform 1s ease-out, opacity 0.75s ease-out; /* Add opacity to the transition */
 } 
@@ -48,15 +46,13 @@
   padding: 20px;
   width: fit-content;
   border-radius: 50px;
-  visibility: hidden;
 }
 
 header {
   border-radius: 400px;
   background-color: var(--blue);
   width:fit-content;
-  padding: 2px;
-  visibility: hidden;
+  padding: 10px;
 }
 
 button {
